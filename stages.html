@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mes Stages en Entreprise BTS SIO SLAM - Moundhir Bouachiba. Hannachi Agencement et immersion professionnelle.">
+  <title>Mes Stages en Entreprise | Moundhir Bouachiba</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <span class="gradient-text">Portfolio</span>
+        <span class="sio">BTS SIO</span>
+        <span class="dot"></span>
+      </a>
+
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Accueil</a>
+        <a href="a-propos.html" class="nav-link">À propos / CV</a>
+        <a href="projets.html" class="nav-link">Projets</a>
+        <a href="stages.html" class="nav-link active">Stages</a>
+        <a href="veille-technologique.html" class="nav-link">Veille</a>
+        <a href="documents-officiels.html" class="nav-link">Documents</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <a href="assets/cv_moundhir.pdf" target="_blank" class="btn btn-glass btn-sm">
+          <span>📄</span> CV
+        </a>
+        <button class="mobile-menu-btn" aria-label="Menu Mobile" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav">
+    <a href="index.html" class="nav-link">Accueil</a>
+    <a href="a-propos.html" class="nav-link">À propos / CV</a>
+    <a href="projets.html" class="nav-link">Projets</a>
+    <a href="stages.html" class="nav-link active">Stages</a>
+    <a href="veille-technologique.html" class="nav-link">Veille Technologique</a>
+    <a href="documents-officiels.html" class="nav-link">Documents Officiels</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+  </div>
+
+  <main>
+    <div class="container">
+      
+      <!-- Section Header -->
+      <div class="section-header" style="margin-top: 1rem;">
+        <h1 class="section-title">
+          Mes <span class="gradient-text">Stages</span> en Entreprise
+        </h1>
+        <p class="section-subtitle">
+          Retrouvez ci-dessous le détail de mes expériences professionnelles en entreprise (stages de 1ère et 2ème année) réalisées dans le cadre du BTS SIO SLAM.
+        </p>
+      </div>
+
+      <!-- Stages Cards Grid -->
+      <div class="stages-grid">
+        
+        <!-- Stage 1ère Année : Hannachi Agencement -->
+        <div class="glass-panel stage-card">
+          <div style="width: 100%; height: 220px; border-radius: var(--radius-md); overflow: hidden; margin-bottom: 1.5rem; border: 1px solid var(--border-subtle);">
+            <img src="assets/hannachi_site.jpg" alt="Stage Hannachi Agencement" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+
+          <h2 class="stage-card-title">Stage de Première Année</h2>
+
+          <div class="stage-card-meta">
+            <span class="badge badge-blue">Juin à Juillet 2026</span>
+            <span class="badge badge-emerald">Hannachi Agencement (Mâcon)</span>
+          </div>
+
+          <p class="stage-card-desc">
+            Création complète du nouveau site internet de l'entreprise d'agencement intérieur et menuiserie sur mesure située à Mâcon. Prise en charge de la conception graphique, du développement web, des formulaires de devis interactifs, du référencement naturel (SEO) et du déploiement serveur par FTP.
+          </p>
+
+          <div style="margin-bottom: 1.5rem;">
+            <h4 style="font-size: 0.9rem; font-weight: 700; color: #ffffff; margin-bottom: 0.6rem;">Compétences clés mobilisées :</h4>
+            <div class="tech-tags">
+              <span class="tech-tag">HTML5 / CSS3</span>
+              <span class="tech-tag">PHP (PDO)</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Hébergement FTP</span>
+              <span class="tech-tag">Sécurité Formulaire</span>
+              <span class="tech-tag">SEO Local</span>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; justify-content: flex-end; margin-top: auto;">
+            <a href="https://hannachiagencement.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+              <span>🌐</span> Voir le site en ligne ↗
+            </a>
+            <button class="btn btn-glass btn-sm" onclick="openModal('Stage de 1ère Année : Hannachi Agencement', '<div style=\'line-height:1.7; color:#d4d4d8;\'><h4 style=\'color:#60a5fa; margin-bottom:0.75rem;\'>Entreprise d\'accueil : Hannachi Agencement</h4><p style=\'margin-bottom:1rem;\'><strong>Adresse :</strong> 187 Rue Albert Camus, 71000 Mâcon<br><strong>Site en ligne :</strong> <a href=\'https://hannachiagencement.netlify.app/\' target=\'_blank\' style=\'color:#38bdf8; text-decoration:underline;\'>hannachiagencement.netlify.app</a><br><strong>Période :</strong> Juin - Juillet 2026 (5 semaines)<br><strong>Gérant :</strong> M. Ameur Hannachi</p><h4 style=\'color:#60a5fa; margin-bottom:0.5rem;\'>Missions réalisées & fonctionnalités livrées :</h4><ul style=\'margin-left:1.25rem; list-style:disc; margin-bottom:1.5rem;\'><li>Conception ergonomique et responsive du site de menuiserie haut de gamme et d\'agencement de cuisines sur mesure.</li><li>Intégration d\'un catalogue de réalisations d\'exception (Gris Charbon, Chêne Naturel, Noir Mat, Bleu Shaker).</li><li>Développement d\'un module interactif d\'estimation et de devis en ligne sous 48h avec validation de données sécurisée.</li><li>Mise en conformité RGPD intégrale (protection des données personnelles, cryptage des transmissions de formulaires).</li><li>Déploiement en production et optimisation des performances de chargement.</li></ul><p style=\'background:rgba(16,185,129,0.1); padding:0.75rem 1rem; border-radius:8px; border:1px solid rgba(16,185,129,0.3); color:#34d399;\'>✓ Projet validé avec succès par l\'entreprise et présenté au jury de l\'épreuve E6 BTS SIO.</p></div>')">
+              Fiche détaillée →
+            </button>
+          </div>
+        </div>
+
+        <!-- Stage 2ème Année -->
+        <div class="glass-panel stage-card">
+          <div style="width: 100%; height: 220px; border-radius: var(--radius-md); overflow: hidden; margin-bottom: 1.5rem; border: 1px solid var(--border-subtle); display: flex; align-items: center; justify-content: center; background: radial-gradient(circle, rgba(139, 92, 246, 0.15), rgba(9, 9, 11, 0.9));">
+            <span style="font-size: 4rem;">🏢</span>
+          </div>
+
+          <h2 class="stage-card-title">Stage de Deuxième Année</h2>
+
+          <div class="stage-card-meta">
+            <span class="badge badge-purple">Janvier à Février 2027</span>
+            <span class="badge badge-neutral">Stage de Spécialité SLAM</span>
+          </div>
+
+          <p class="stage-card-desc">
+            Immersion professionnelle approfondie au sein d'une Direction des Systèmes d'Information (DSI) ou Entreprise de Services du Numérique (ESN). Participation au cycle de développement logiciel complet sur des technologies d'entreprise (.NET / Laravel / Vue.js).
+          </p>
+
+          <div style="margin-bottom: 1.5rem;">
+            <h4 style="font-size: 0.9rem; font-weight: 700; color: #ffffff; margin-bottom: 0.6rem;">Compétences visées :</h4>
+            <div class="tech-tags">
+              <span class="tech-tag">C# .NET</span>
+              <span class="tech-tag">Laravel</span>
+              <span class="tech-tag">API REST</span>
+              <span class="tech-tag">Agile Scrum</span>
+              <span class="tech-tag">SQL & ORM</span>
+              <span class="tech-tag">Tests & CI/CD</span>
+            </div>
+          </div>
+
+          <div style="display: flex; justify-content: flex-end; margin-top: auto;">
+            <button class="btn btn-glass btn-sm" onclick="openModal('Stage de 2ème Année (SLAM)', '<div style=\'line-height:1.7; color:#d4d4d8;\'><h4 style=\'color:#a78bfa; margin-bottom:0.75rem;\'>Immersion en Développement Applicatif</h4><p style=\'margin-bottom:1rem;\'><strong>Période :</strong> Janvier - Février 2027 (5 semaines)<br><strong>Objectif :</strong> Contribution à des projets applicatifs de grande envergure en environnement d\'équipe.</p><h4 style=\'color:#a78bfa; margin-bottom:0.5rem;\'>Axes d\'apprentissage :</h4><ul style=\'margin-left:1.25rem; list-style:disc;\'><li>Développement de micro-services et consommation d\'APIs métier.</li><li>Conception de composants frontend réactifs et back-end sécurisé.</li><li>Pratique des tests unitaires et intégration continue (CI/CD).</li><li>Collaboration via GitHub / GitLab avec revues de code (Pull Requests).</li></ul></div>')">
+              Accéder au rapport complet →
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Global Modal Popup -->
+  <div class="modal-backdrop">
+    <div class="modal-box">
+      <button class="modal-close-btn" aria-label="Fermer">✕</button>
+      <h3 class="modal-title" style="font-size: 1.35rem; font-weight: 700; color: #ffffff; margin-bottom: 1.25rem;">Détail</h3>
+      <div class="modal-body-dynamic" style="color: var(--text-secondary); line-height: 1.6;"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <h4>Portfolio Moundhir Bouachiba • BTS SIO SLAM</h4>
+        <p>© 2026 Lycée Lamartine (Mâcon) — Épreuve E6 / E4</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="https://github.com/moundhirbouachiba-debug" target="_blank" rel="noopener">GitHub</a>
+        <a href="a-propos.html">À propos / CV</a>
+        <a href="contact.html">Contact</a>
+        <button class="scroll-top-btn" aria-label="Haut de page">
+          <span>↑</span> Haut de page
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

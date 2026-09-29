@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contactez Moundhir Bouachiba, étudiant développeur en BTS SIO SLAM à Mâcon (71) - Email, téléphone, GitHub et formulaire direct.">
+  <title>Me Contacter | Moundhir Bouachiba</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <span class="gradient-text">Portfolio</span>
+        <span class="sio">BTS SIO</span>
+        <span class="dot"></span>
+      </a>
+
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Accueil</a>
+        <a href="a-propos.html" class="nav-link">À propos / CV</a>
+        <a href="projets.html" class="nav-link">Projets</a>
+        <a href="stages.html" class="nav-link">Stages</a>
+        <a href="veille-technologique.html" class="nav-link">Veille</a>
+        <a href="documents-officiels.html" class="nav-link">Documents</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <a href="assets/cv_moundhir.pdf" target="_blank" class="btn btn-glass btn-sm">
+          <span>📄</span> CV
+        </a>
+        <button class="mobile-menu-btn" aria-label="Menu Mobile" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav">
+    <a href="index.html" class="nav-link">Accueil</a>
+    <a href="a-propos.html" class="nav-link">À propos / CV</a>
+    <a href="projets.html" class="nav-link">Projets</a>
+    <a href="stages.html" class="nav-link">Stages</a>
+    <a href="veille-technologique.html" class="nav-link">Veille Technologique</a>
+    <a href="documents-officiels.html" class="nav-link">Documents Officiels</a>
+    <a href="contact.html" class="nav-link active">Contact</a>
+  </div>
+
+  <main>
+    <div class="container">
+      
+      <!-- Section Header -->
+      <div class="section-header" style="text-align: center; margin-top: 1rem; margin-bottom: 3.5rem;">
+        <h1 class="section-title">
+          Me <span class="gradient-text">Contacter</span>
+        </h1>
+        <p class="section-subtitle" style="margin: 0 auto;">
+          Étudiant motivé et rigoureux en BTS SIO SLAM à Mâcon, je suis disponible pour échanger sur vos opportunités d'embauche, d'alternance ou de stage.
+        </p>
+      </div>
+
+      <!-- Contact Grid Split -->
+      <div class="contact-grid">
+        
+        <!-- Channels list -->
+        <div class="contact-channels">
+          
+          <!-- Email -->
+          <a href="mailto:moundhirbouachiba@gmail.com" class="glass-panel contact-card">
+            <div class="contact-icon-box">📧</div>
+            <div class="contact-card-text">
+              <span>Adresse Email</span>
+              <strong>moundhirbouachiba@gmail.com</strong>
+            </div>
+          </a>
+
+          <!-- Téléphone -->
+          <a href="tel:+33633977702" class="glass-panel contact-card">
+            <div class="contact-icon-box">📱</div>
+            <div class="contact-card-text">
+              <span>Téléphone Mobile</span>
+              <strong>+33 6 33 97 77 02</strong>
+            </div>
+          </a>
+
+          <!-- GitHub -->
+          <a href="https://github.com/moundhirbouachiba-debug" target="_blank" rel="noopener noreferrer" class="glass-panel contact-card">
+            <div class="contact-icon-box">💻</div>
+            <div class="contact-card-text">
+              <span>Profil GitHub</span>
+              <strong>github.com/moundhirbouachiba-debug</strong>
+            </div>
+          </a>
+
+          <!-- Localisation -->
+          <div class="glass-panel contact-card">
+            <div class="contact-icon-box">📍</div>
+            <div class="contact-card-text">
+              <span>Localisation</span>
+              <strong>192 Rue Joséphine Baker, 71000 Mâcon</strong>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Form Box -->
+        <div class="glass-panel" style="padding: 2.5rem; border-radius: var(--radius-xl);">
+          <h3 style="font-size: 1.35rem; font-weight: 700; color: #ffffff; margin-bottom: 0.5rem;">
+            Envoyer un message direct
+          </h3>
+          <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1.5rem;">
+            Remplissez ce formulaire et je vous répondrai dans les plus brefs délais.
+          </p>
+
+          <form id="contact-form">
+            <div class="form-group">
+              <label class="form-label" for="contact-name">Nom & Prénom</label>
+              <input type="text" id="contact-name" class="input-field" placeholder="Ex: Jean Dupont" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contact-email">Votre Email</label>
+              <input type="email" id="contact-email" class="input-field" placeholder="jean.dupont@entreprise.fr" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contact-subject">Objet du message</label>
+              <input type="text" id="contact-subject" class="input-field" placeholder="Proposition de stage / alternance, question..." required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contact-message">Message</label>
+              <textarea id="contact-message" class="input-field" placeholder="Bonjour Moundhir, j'ai découvert votre portfolio et..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <span>✉️ Envoyer le message</span>
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <h4>Portfolio Moundhir Bouachiba • BTS SIO SLAM</h4>
+        <p>© 2026 Lycée Lamartine (Mâcon) — Épreuve E6 / E4</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="https://github.com/moundhirbouachiba-debug" target="_blank" rel="noopener">GitHub</a>
+        <a href="a-propos.html">À propos / CV</a>
+        <a href="contact.html">Contact</a>
+        <button class="scroll-top-btn" aria-label="Haut de page">
+          <span>↑</span> Haut de page
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

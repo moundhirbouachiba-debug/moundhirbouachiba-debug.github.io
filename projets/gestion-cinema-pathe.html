@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Étude de cas : Gestion de Cinéma Pathé Mâcon en C# WinForms et PHP MySQL par Moundhir Bouachiba, BTS SIO SLAM.">
+  <title>Gestion de Cinéma (Pathé Mâcon) | Moundhir Bouachiba</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="../index.html" class="brand-logo">
+        <span class="gradient-text">Portfolio</span>
+        <span class="sio">BTS SIO</span>
+        <span class="dot"></span>
+      </a>
+
+      <div class="nav-links">
+        <a href="../index.html" class="nav-link">Accueil</a>
+        <a href="../a-propos.html" class="nav-link">À propos / CV</a>
+        <a href="../projets.html" class="nav-link active">Projets</a>
+        <a href="../stages.html" class="nav-link">Stages</a>
+        <a href="../veille-technologique.html" class="nav-link">Veille</a>
+        <a href="../documents-officiels.html" class="nav-link">Documents</a>
+        <a href="../contact.html" class="nav-link">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <a href="../assets/cv_moundhir.pdf" target="_blank" class="btn btn-glass btn-sm">
+          <span>📄</span> CV
+        </a>
+        <button class="mobile-menu-btn" aria-label="Menu Mobile" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav">
+    <a href="../index.html" class="nav-link">Accueil</a>
+    <a href="../a-propos.html" class="nav-link">À propos / CV</a>
+    <a href="../projets.html" class="nav-link active">Projets</a>
+    <a href="../stages.html" class="nav-link">Stages</a>
+    <a href="../veille-technologique.html" class="nav-link">Veille Technologique</a>
+    <a href="../documents-officiels.html" class="nav-link">Documents Officiels</a>
+    <a href="../contact.html" class="nav-link">Contact</a>
+  </div>
+
+  <main>
+    <div class="container">
+      
+      <!-- Back Link -->
+      <div style="margin-bottom: 1.5rem;">
+        <a href="../projets.html" style="display: inline-flex; align-items: center; gap: 0.5rem; color: var(--text-secondary); font-size: 0.9rem;">
+          <span>←</span> Retour aux projets
+        </a>
+      </div>
+
+      <!-- Project Detail Header -->
+      <section class="project-detail-header">
+        <div class="project-meta-badges">
+          <span class="badge badge-blue">1ère Année (SLAM)</span>
+          <span class="badge badge-neutral">Pathé Mâcon (Projet / Atelier)</span>
+        </div>
+
+        <div class="project-header-flex">
+          <div>
+            <h1 class="section-title" style="margin-bottom: 0.5rem;">
+              Gestion de Cinéma (Pathé Mâcon)
+            </h1>
+            <p style="color: var(--text-secondary); font-size: 1.15rem; max-width: 750px; line-height: 1.6;">
+              Développement d'une solution informatique complète pour la gestion des séances de cinéma, incluant une application lourde de back-office C# WinForms et un site web public en PHP/MySQL.
+            </p>
+          </div>
+
+          <div class="tech-tags">
+            <span class="tech-tag">C#</span>
+            <span class="tech-tag">WinForms</span>
+            <span class="tech-tag">PHP</span>
+            <span class="tech-tag">MySQL</span>
+            <span class="tech-tag">Visual Studio</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Main Project Overview Grid -->
+      <section class="detail-grid-split">
+        <!-- Objectifs -->
+        <div class="glass-panel detail-section">
+          <h2><span>🎯</span> Objectifs</h2>
+          <ul class="check-list">
+            <li>
+              <span class="check-icon">✓</span>
+              <span>Automatiser la planification des films, des salles et des séances cinéma.</span>
+            </li>
+            <li>
+              <span class="check-icon">✓</span>
+              <span>Générer des documents PDF automatisés pour les bilans de diffusion administrative.</span>
+            </li>
+            <li>
+              <span class="check-icon">✓</span>
+              <span>Créer une interface web connectée pour la consultation publique des horaires et réservations.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contexte & Missions -->
+        <div class="glass-panel detail-section">
+          <h2><span>📝</span> Contexte & Missions</h2>
+          <div style="color: var(--text-secondary); line-height: 1.7; display: flex; flex-direction: column; gap: 1rem; font-size: 0.95rem;">
+            <p>
+              Dans le cadre de l'atelier de spécialité SLAM de 1ère année au Lycée Lamartine, j'ai développé de bout en bout une solution logicielle pour le cinéma Pathé de Mâcon.
+            </p>
+            <p>
+              La mission s'est déroulée en deux phases clés : la création d'une application C# orientée objet pour les gestionnaires (gestion des films, affectation des salles, génération des grilles horaires) et un site web PHP dynamique pour les clients finaux accédant aux horaires en temps réel.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Galerie Technique -->
+      <section class="gallery-section">
+        <h2 style="font-size: 1.6rem; font-weight: 800; color: #ffffff; margin-bottom: 1.5rem;">
+          Galerie Technique & Captures d'Écran
+        </h2>
+
+        <div class="gallery-grid">
+          <!-- Item 1 -->
+          <div class="gallery-item" onclick="openModal('Interface C# WinForms - Pathé Cinéma', '<img src=\'../assets/pathe_cinema.jpg\' style=\'width:100%; border-radius:12px; margin-bottom:1rem;\'><p style=\'color:#a1a1aa; font-size:0.95rem;\'>Capture de l\'interface principale développée en C# WinForms sous Visual Studio 2022 : panneau de bord, planification hebdomadaire des séances, gestion des auditoriums et affichage du plan de salle interactif.</p>')">
+            <img src="../assets/pathe_cinema.jpg" alt="Interface C# WinForms">
+            <div class="gallery-overlay">
+              <span class="icon">📸</span>
+              <span class="gallery-caption">Interface C# WinForms</span>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="gallery-item" onclick="openModal('Modèle Conceptuel de Données (MCD)', '<div style=\'background:#18181b; padding:2rem; border-radius:12px; font-family:monospace; color:#60a5fa; line-height:1.8; text-align:left; font-size:0.9rem;\'><strong>MCD CINEMA PATHE :</strong><br><br>FILM (<u>id_film</u>, titre, duree_min, classification, affiche)<br>SALLE (<u>id_salle</u>, nom_salle, capacite_places)<br>SEANCE (<u>id_seance</u>, date_heure, prix_base, <i>#id_film</i>, <i>#id_salle</i>)<br>RESERVATION (<u>id_resa</u>, nom_client, nb_places, date_resa, <i>#id_seance</i>)<br><br><span style=\'color:#34d399;\'>✓ Normalisation 3FN respectée, clés primaires et index optimisés pour requêtage rapide.</span></div>')">
+            <div style="width:100%; height:100%; background: #18181b; display:flex; align-items:center; justify-content:center; font-size:3rem;">
+              📊
+            </div>
+            <div class="gallery-overlay">
+              <span class="icon">🔍</span>
+              <span class="gallery-caption">Modèle Conceptuel (MCD)</span>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="gallery-item" onclick="openModal('Extraction PDF des Plannings', '<div style=\'background:#18181b; padding:2rem; border-radius:12px; color:#e4e4e7; line-height:1.7; font-size:0.95rem;\'><h4 style=\'color:#60a5fa; margin-bottom:1rem;\'>Génération de Rapports Automatisés</h4><p>Utilisation d\'une bibliothèque de création de documents PDF (iTextSharp / PDFSharp en .NET) connectée à la base de données MySQL pour exporter automatiquement les plannings hebdomadaires des projectionnistes et les fiches d\'exploitation par salle.</p></div>')">
+            <div style="width:100%; height:100%; background: #18181b; display:flex; align-items:center; justify-content:center; font-size:3rem;">
+              📑
+            </div>
+            <div class="gallery-overlay">
+              <span class="icon">🔍</span>
+              <span class="gallery-caption">Extraction PDF des plannings</span>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="gallery-item" onclick="openModal('Site Web Public (PHP/MySQL)', '<div style=\'background:#18181b; padding:2rem; border-radius:12px; color:#e4e4e7; line-height:1.7; font-size:0.95rem;\'><h4 style=\'color:#60a5fa; margin-bottom:1rem;\'>Portail Public des Spectateurs</h4><p>Portail développé en PHP procédural puis refactorisé en MVC avec requêtes préparées PDO pour sécuriser les entrées contre les injections SQL. Permet aux cinéphiles de consulter les affiches, les bandes-annonces et les horaires mis à jour en temps réel depuis le back-office.</p></div>')">
+            <div style="width:100%; height:100%; background: #18181b; display:flex; align-items:center; justify-content:center; font-size:3rem;">
+              🌐
+            </div>
+            <div class="gallery-overlay">
+              <span class="icon">🔍</span>
+              <span class="gallery-caption">Site Web Public</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Résolution de Problèmes -->
+      <section class="glass-panel problem-card">
+        <div class="problem-header">
+          <span style="font-size: 1.5rem; color: var(--accent-amber);">⚠️</span>
+          <span>Constat du problème technique rencontré</span>
+        </div>
+        <p class="problem-desc">
+          Gérer la communication asynchrone et les latences entre la base de données distante hébergée sur MySQL et l'application lourde locale C# WinForms en conservant l'intégrité transactionnelle et la fluidité de l'interface utilisateur.
+        </p>
+
+        <div class="solution-box">
+          <div class="solution-title">
+            <span>✓</span> Solution technique apportée
+          </div>
+          <p class="solution-text">
+            Mise en place d'une couche d'accès aux données (DAL) avec classes unifiées, sécurisation de la chaîne de connexion distante avec chiffrement, utilisation de requêtes paramétrées, exécution en tâches d'arrière-plan (BackgroundWorker / async/await) et gestion stricte des exceptions SQL (MySqlException).
+          </p>
+        </div>
+      </section>
+
+      <!-- Compétences & Documents Annexes -->
+      <section class="two-col-grid">
+        
+        <!-- Compétences Référentiel -->
+        <div class="glass-panel detail-section">
+          <h2>Compétences du Référentiel SIO</h2>
+          <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+            <div class="competency-item">
+              <span>B1.3 : Développer la présence en ligne de l'organisation</span>
+              <span class="check">✓</span>
+            </div>
+            <div class="competency-item">
+              <span>B1.4 : Travailler en mode projet</span>
+              <span class="check">✓</span>
+            </div>
+            <div class="competency-item">
+              <span>B2.2 : Développer et concevoir des applications web</span>
+              <span class="check">✓</span>
+            </div>
+            <div class="competency-item">
+              <span>B2.3 : Concevoir et développer une solution applicative (POO)</span>
+              <span class="check">✓</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Documents Annexes -->
+        <div class="glass-panel detail-section">
+          <h2>Documents Annexes</h2>
+          <div class="annex-grid">
+            <div class="annex-card" onclick="openModal('Cahier des charges', '<p>Cahier des charges fonctionnel et technique du projet Pathé Mâcon : spécification des besoins utilisateurs, règles de gestion des séances, contraintes de sécurité et calendrier de réalisation.</p>')">
+              <span class="icon">📄</span>
+              <span class="label">Cahier des charges</span>
+            </div>
+            <div class="annex-card" onclick="openModal('Diagrammes UML', '<p>Dossier de modélisation UML : diagrammes de cas d\'utilisation (Use Case), diagramme de classes C# WinForms et schéma relationnel de la base de données MySQL.</p>')">
+              <span class="icon">📊</span>
+              <span class="label">Diagrammes UML</span>
+            </div>
+            <a href="https://github.com/moundhirbouachiba-debug" target="_blank" class="annex-card">
+              <span class="icon">💻</span>
+              <span class="label">Code GitHub</span>
+            </a>
+            <div class="annex-card" onclick="openModal('Plan de test', '<p>Matrice des tests fonctionnels et unitaires : validation des contraintes d\'unicité des séances, gestion des erreurs de saisie utilisateur et vérification de la génération du PDF.</p>')">
+              <span class="icon">🧪</span>
+              <span class="label">Plan de test</span>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Global Modal Popup -->
+  <div class="modal-backdrop">
+    <div class="modal-box">
+      <button class="modal-close-btn" aria-label="Fermer">✕</button>
+      <h3 class="modal-title" style="font-size: 1.35rem; font-weight: 700; color: #ffffff; margin-bottom: 1.25rem;">Détail</h3>
+      <div class="modal-body-dynamic" style="color: var(--text-secondary); line-height: 1.6;"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <h4>Portfolio Moundhir Bouachiba • BTS SIO SLAM</h4>
+        <p>© 2026 Lycée Lamartine (Mâcon) — Épreuve E6 / E4</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="https://github.com/moundhirbouachiba-debug" target="_blank" rel="noopener">GitHub</a>
+        <a href="../a-propos.html">À propos / CV</a>
+        <a href="../contact.html">Contact</a>
+        <button class="scroll-top-btn" aria-label="Haut de page">
+          <span>↑</span> Haut de page
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

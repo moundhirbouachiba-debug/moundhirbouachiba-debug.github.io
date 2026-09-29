@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mes Projets Informatiques PPE en BTS SIO SLAM - Moundhir Bouachiba. Études de cas, technologies et codes sources.">
+  <title>Mes Projets (PPE) | Moundhir Bouachiba</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <span class="gradient-text">Portfolio</span>
+        <span class="sio">BTS SIO</span>
+        <span class="dot"></span>
+      </a>
+
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Accueil</a>
+        <a href="a-propos.html" class="nav-link">À propos / CV</a>
+        <a href="projets.html" class="nav-link active">Projets</a>
+        <a href="stages.html" class="nav-link">Stages</a>
+        <a href="veille-technologique.html" class="nav-link">Veille</a>
+        <a href="documents-officiels.html" class="nav-link">Documents</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <a href="assets/cv_moundhir.pdf" target="_blank" class="btn btn-glass btn-sm">
+          <span>📄</span> CV
+        </a>
+        <button class="mobile-menu-btn" aria-label="Menu Mobile" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav">
+    <a href="index.html" class="nav-link">Accueil</a>
+    <a href="a-propos.html" class="nav-link">À propos / CV</a>
+    <a href="projets.html" class="nav-link active">Projets</a>
+    <a href="stages.html" class="nav-link">Stages</a>
+    <a href="veille-technologique.html" class="nav-link">Veille Technologique</a>
+    <a href="documents-officiels.html" class="nav-link">Documents Officiels</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+  </div>
+
+  <main>
+    <div class="container">
+      
+      <!-- Section Header -->
+      <div class="section-header" style="margin-top: 1rem;">
+        <h1 class="section-title">
+          Mes <span class="gradient-text">Projets (PPE)</span>
+        </h1>
+        <p class="section-subtitle">
+          Retrouvez l'ensemble de mes Projets Personnalisés Encadrés (PPE) et réalisations techniques développés au cours de ma formation BTS SIO au Lycée Lamartine.
+        </p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="filter-tabs">
+        <button class="filter-tab active" data-filter="all">Tous les projets</button>
+        <button class="filter-tab" data-filter="slam">SLAM (Développement)</button>
+        <button class="filter-tab" data-filter="sisr">SISR (Réseau & Sécurité)</button>
+        <button class="filter-tab" data-filter="web">Web & Frameworks</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid">
+        
+        <!-- Projet 1: Pathé Mâcon (SLAM) -->
+        <a href="projets/gestion-cinema-pathe.html" class="glass-panel project-card" data-category="slam web">
+          <div class="project-thumbnail">
+            <img src="assets/pathe_cinema.jpg" alt="Gestion de Cinéma Pathé Mâcon">
+          </div>
+          <div class="project-meta">
+            <span class="badge badge-blue">1ère Année (SLAM)</span>
+            <span class="badge badge-neutral">Pathé Mâcon</span>
+          </div>
+          <h2 class="project-title">Gestion de Cinéma (Pathé Mâcon)</h2>
+          <p class="project-desc">
+            Développement complet d'une application lourde en C# WinForms pour le back-office et d'un site web dynamique en PHP/MySQL pour la consultation des films et des séances.
+          </p>
+          <div class="project-footer">
+            <span style="font-size: 0.8rem; color: var(--text-muted);">C# • WinForms • PHP • MySQL</span>
+            <span class="project-link-arrow">Voir l'étude de cas →</span>
+          </div>
+        </a>
+
+        <!-- Projet 2: Infrastructure Réseau (SISR) -->
+        <a href="projets/infrastructure-reseau.html" class="glass-panel project-card" data-category="sisr">
+          <div class="project-thumbnail">
+            <img src="assets/packet_tracer.jpg" alt="Infrastructure Réseau & Sécurité">
+          </div>
+          <div class="project-meta">
+            <span class="badge badge-blue">1ère Année (SISR)</span>
+            <span class="badge badge-neutral">Atelier Réseau</span>
+          </div>
+          <h2 class="project-title">Infrastructure Réseau & Sécurité</h2>
+          <p class="project-desc">
+            Modélisation et mise en place d'une architecture réseau d'entreprise complète avec segmentation VLAN, plan d'adressage IP robuste et routage Router-on-a-stick sous Cisco Packet Tracer.
+          </p>
+          <div class="project-footer">
+            <span style="font-size: 0.8rem; color: var(--text-muted);">Packet Tracer • VLAN • CLI • Routage</span>
+            <span class="project-link-arrow">Voir l'étude de cas →</span>
+          </div>
+        </a>
+
+        <!-- Projet 3: PPE 3/4 Synthèse (SLAM) -->
+        <a href="projets/ppe34.html" class="glass-panel project-card" data-category="slam web">
+          <div class="project-thumbnail">
+            <img src="assets/brit_hotel.jpg" alt="PPE 3/4 : Solution Métier Brit Hotel">
+          </div>
+          <div class="project-meta">
+            <span class="badge badge-purple">2ème Année (SLAM)</span>
+            <span class="badge badge-neutral">Synthèse Finale</span>
+          </div>
+          <h2 class="project-title">PPE 3/4 : Projet de Synthèse (Brit Hotel)</h2>
+          <p class="project-desc">
+            Projet de synthèse final validant l'ensemble des compétences de deuxième année : plateforme hôtelière complète combinant un logiciel client C# Entity Framework et une application web Laravel.
+          </p>
+          <div class="project-footer">
+            <span style="font-size: 0.8rem; color: var(--text-muted);">Laravel • C# Entity • MySQL • API</span>
+            <span class="project-link-arrow">Voir l'étude de cas →</span>
+          </div>
+        </a>
+
+        <!-- Projet 4: Hannachi Agencement (Stage) -->
+        <a href="https://hannachiagencement.netlify.app/" target="_blank" rel="noopener noreferrer" class="glass-panel project-card" data-category="web slam">
+          <div class="project-thumbnail">
+            <img src="assets/hannachi_site.jpg" alt="Site Web Hannachi Agencement">
+          </div>
+          <div class="project-meta">
+            <span class="badge badge-emerald">Site en Ligne ↗</span>
+            <span class="badge badge-neutral">Stage Entreprise</span>
+          </div>
+          <h2 class="project-title">Hannachi Agencement (Site Officiel)</h2>
+          <p class="project-desc">
+            Site web professionnel conçu et déployé lors de mon stage de 1ère année : catalogue de cuisines sur mesure, demande de devis en ligne sous 48h, modélisation 3D et conformité RGPD.
+          </p>
+          <div class="project-footer">
+            <span style="font-size: 0.8rem; color: var(--text-muted);">hannachiagencement.netlify.app</span>
+            <span class="project-link-arrow">Visiter le site ↗</span>
+          </div>
+        </a>
+
+        <!-- Projet 5: TP1-Laravel (GitHub) -->
+        <a href="https://github.com/moundhirbouachiba-debug/TP1-Laravel" target="_blank" rel="noopener noreferrer" class="glass-panel project-card" data-category="web slam">
+          <div class="project-thumbnail" style="display: flex; align-items: center; justify-content: center; background: radial-gradient(circle, rgba(239, 68, 68, 0.15), rgba(9, 9, 11, 0.9));">
+            <span style="font-size: 4rem;">🔴</span>
+          </div>
+          <div class="project-meta">
+            <span class="badge badge-neutral">Dépôt GitHub</span>
+            <span class="badge badge-blue">Laravel MVC</span>
+          </div>
+          <h2 class="project-title">TP1-Laravel (Architecture & ORM)</h2>
+          <p class="project-desc">
+            Atelier pratique approfondi sur Laravel : migrations de base de données relationnelle, modèles Eloquent, routes RESTful, contrôleurs et moteurs de templates Blade.
+          </p>
+          <div class="project-footer">
+            <span style="font-size: 0.8rem; color: var(--text-muted);">PHP • Laravel 11 • Eloquent • Blade</span>
+            <span class="project-link-arrow">Voir sur GitHub ↗</span>
+          </div>
+        </a>
+
+        <!-- Projet 6: Monprojet UI & CSS (GitHub) -->
+        <a href="https://github.com/moundhirbouachiba-debug/Monprojet" target="_blank" rel="noopener noreferrer" class="glass-panel project-card" data-category="web">
+          <div class="project-thumbnail" style="display: flex; align-items: center; justify-content: center; background: radial-gradient(circle, rgba(59, 130, 246, 0.15), rgba(9, 9, 11, 0.9));">
+            <span style="font-size: 4rem;">🎨</span>
+          </div>
+          <div class="project-meta">
+            <span class="badge badge-neutral">Dépôt GitHub</span>
+            <span class="badge badge-purple">Frontend Web</span>
+          </div>
+          <h2 class="project-title">Monprojet (Design & Intégration)</h2>
+          <p class="project-desc">
+            Travaux d'intégration web responsive, maîtrise de Flexbox, CSS Grid, animations fluides et bonnes pratiques d'ergonomie utilisateur.
+          </p>
+          <div class="project-footer">
+            <span style="font-size: 0.8rem; color: var(--text-muted);">HTML5 • CSS3 • Responsive Design</span>
+            <span class="project-link-arrow">Voir sur GitHub ↗</span>
+          </div>
+        </a>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <h4>Portfolio Moundhir Bouachiba • BTS SIO SLAM</h4>
+        <p>© 2026 Lycée Lamartine (Mâcon) — Épreuve E6 / E4</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="https://github.com/moundhirbouachiba-debug" target="_blank" rel="noopener">GitHub</a>
+        <a href="a-propos.html">À propos / CV</a>
+        <a href="contact.html">Contact</a>
+        <button class="scroll-top-btn" aria-label="Haut de page">
+          <span>↑</span> Haut de page
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

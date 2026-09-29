@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Documents Officiels BTS SIO Espace Jury - Tableau de synthèse E6, attestations de stage et fiches descriptives de Moundhir Bouachiba.">
+  <title>Documents Officiels | Moundhir Bouachiba</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <span class="gradient-text">Portfolio</span>
+        <span class="sio">BTS SIO</span>
+        <span class="dot"></span>
+      </a>
+
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Accueil</a>
+        <a href="a-propos.html" class="nav-link">À propos / CV</a>
+        <a href="projets.html" class="nav-link">Projets</a>
+        <a href="stages.html" class="nav-link">Stages</a>
+        <a href="veille-technologique.html" class="nav-link">Veille</a>
+        <a href="documents-officiels.html" class="nav-link active">Documents</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <a href="assets/cv_moundhir.pdf" target="_blank" class="btn btn-glass btn-sm">
+          <span>📄</span> CV
+        </a>
+        <button class="mobile-menu-btn" aria-label="Menu Mobile" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav">
+    <a href="index.html" class="nav-link">Accueil</a>
+    <a href="a-propos.html" class="nav-link">À propos / CV</a>
+    <a href="projets.html" class="nav-link">Projets</a>
+    <a href="stages.html" class="nav-link">Stages</a>
+    <a href="veille-technologique.html" class="nav-link">Veille Technologique</a>
+    <a href="documents-officiels.html" class="nav-link active">Documents Officiels</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+  </div>
+
+  <main>
+    <div class="container">
+      
+      <!-- Lock Screen View -->
+      <div class="lock-wrapper" id="doc-lock-screen">
+        <div class="glass-panel lock-card">
+          <div class="lock-icon-circle">
+            <span>🔒</span>
+          </div>
+
+          <h1 style="font-size: 1.75rem; font-weight: 800; color: #ffffff; margin-bottom: 0.5rem;">
+            Accès Restreint
+          </h1>
+
+          <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 2rem; line-height: 1.6;">
+            Veuillez entrer le mot de passe fourni dans votre convocation pour accéder aux documents d'examen et au tableau de synthèse officiel du BTS SIO.
+          </p>
+
+          <form id="unlock-doc-form" style="display: flex; flex-direction: column; gap: 0.75rem;">
+            <div>
+              <input type="password" id="jury-password" placeholder="Mot de passe jury (ex: SIO2026)" class="input-field" required>
+            </div>
+
+            <p id="unlock-error" style="color: #f43f5e; font-size: 0.85rem; display: none; margin-bottom: 0.5rem;">
+              Mot de passe incorrect. Vous pouvez cliquer ci-dessous pour l'accès démo.
+            </p>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              Déverrouiller
+            </button>
+
+            <button type="button" id="demo-unlock-btn" class="btn btn-glass btn-sm" style="margin-top: 0.5rem; width: 100%;">
+              <span>🔑</span> Accès Démo Jury (Déverrouillage instantané)
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Unlocked Content View (Hidden initially) -->
+      <div id="doc-unlocked-content" style="display: none; animation: fadeIn 0.4s ease forwards;">
+        
+        <div class="section-header" style="margin-top: 1rem;">
+          <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+            <div>
+              <span class="badge badge-emerald" style="margin-bottom: 0.5rem;">Espace Déverrouillé</span>
+              <h1 class="section-title">
+                Documents Officiels <span class="gradient-text">BTS SIO</span>
+              </h1>
+              <p class="section-subtitle">
+                Dossier administratif et technique pour l'épreuve E6 / E4 de Moundhir Bouachiba • Session 2026.
+              </p>
+            </div>
+            
+            <a href="assets/cv_moundhir.pdf" target="_blank" class="btn btn-primary btn-sm">
+              <span>📥</span> Télécharger le CV Complet
+            </a>
+          </div>
+        </div>
+
+        <!-- Documents List -->
+        <div style="display: flex; flex-direction: column; gap: 1.25rem; margin-bottom: 4rem;">
+          
+          <!-- Doc 1: Tableau de Synthèse -->
+          <div class="glass-panel doc-card">
+            <div class="doc-info">
+              <div class="doc-icon">📊</div>
+              <div>
+                <h4>Tableau de Synthèse des Réalisations Professionnelles (E6)</h4>
+                <p>Annexe 6-1 conforme à la circulaire nationale d'examen du BTS SIO SLAM avec cartographie des blocs de compétences B1 et B2.</p>
+              </div>
+            </div>
+            <button class="btn btn-glass btn-sm shrink-0" onclick="openModal('Tableau de Synthèse E6 - Moundhir Bouachiba', '<div style=\'line-height:1.7; color:#e4e4e7;\'><h4 style=\'color:#60a5fa; margin-bottom:0.75rem;\'>Récapitulatif des Situations Professionnelles :</h4><table style=\'width:100%; border-collapse:collapse; text-align:left; font-size:0.85rem; margin-bottom:1.5rem;\'><tr style=\'background:rgba(255,255,255,0.06);\'><th style=\'padding:8px; border:1px solid #333;\'>Projet</th><th style=\'padding:8px; border:1px solid #333;\'>Type</th><th style=\'padding:8px; border:1px solid #333;\'>Compétences couvertes</th></tr><tr><td style=\'padding:8px; border:1px solid #333;\'>Pathé Mâcon (Cinéma)</td><td style=\'padding:8px; border:1px solid #333;\'>Atelier 1 (SLAM)</td><td style=\'padding:8px; border:1px solid #333;\'>B1.3, B1.4, B2.2, B2.3 (C#, WinForms, PHP)</td></tr><tr><td style=\'padding:8px; border:1px solid #333;\'>Architecture Réseau</td><td style=\'padding:8px; border:1px solid #333;\'>Atelier 2 (SISR)</td><td style=\'padding:8px; border:1px solid #333;\'>B1.1, B3.1, B3.2 (Packet Tracer, VLAN)</td></tr><tr><td style=\'padding:8px; border:1px solid #333;\'>Brit Hotel / Laravel</td><td style=\'padding:8px; border:1px solid #333;\'>PPE 3/4 Synthèse</td><td style=\'padding:8px; border:1px solid #333;\'>B1.1, B1.4, B2.1, B2.2, B2.3 (Entity Framework, Laravel)</td></tr><tr><td style=\'padding:8px; border:1px solid #333;\'>Hannachi Agencement</td><td style=\'padding:8px; border:1px solid #333;\'>Stage Entreprise</td><td style=\'padding:8px; border:1px solid #333;\'>B1.3, B1.4, B2.2 (Web, SEO, Déploiement)</td></tr></table><p style=\'color:#34d399;\'>Document complet signé par le professeur coordinateur et disponible pour consultation par la commission d\'interrogation.</p></div>')">
+              Consulter
+            </button>
+          </div>
+
+          <!-- Doc 2: Fiches de situation professionnelle -->
+          <div class="glass-panel doc-card">
+            <div class="doc-info">
+              <div class="doc-icon">📑</div>
+              <div>
+                <h4>Fiches de Situation Professionnelle & Portefeuilles d'Éléments de Preuve</h4>
+                <p>Descriptif technique des tâches effectuées, captures d'écrans, code source et schémas relationnels associés.</p>
+              </div>
+            </div>
+            <button class="btn btn-glass btn-sm shrink-0" onclick="openModal('Fiches de Situation Professionnelle', '<div style=\'line-height:1.7; color:#e4e4e7;\'><p style=\'margin-bottom:1rem;\'>Les fiches descriptives détaillent l\'environnement technique, les démarches d\'analyse, les tests unitaires et la résolution des incidents rencontrés sur chaque projet.</p><ul style=\'margin-left:1.25rem; list-style:disc;\'><li>Fiche 1 : Gestionnaire de cinéma Pathé (C# WinForms / MySQL)</li><li>Fiche 2 : Infrastructure réseau sécurisée PME (VLANs / Cisco)</li><li>Fiche 3 : Plateforme de réservation Brit Hotel (Laravel / Entity Framework)</li><li>Fiche 4 : Site internet Hannachi Agencement (Production réelle)</li></ul></div>')">
+              Consulter
+            </button>
+          </div>
+
+          <!-- Doc 3: Attestation de Stage -->
+          <div class="glass-panel doc-card">
+            <div class="doc-info">
+              <div class="doc-icon">📜</div>
+              <div>
+                <h4>Attestation de Stage en Entreprise (Hannachi Agencement)</h4>
+                <p>Certificat officiel de réalisation des 5 semaines de stage professionnel en entreprise à Mâcon (Juin - Juillet 2026).</p>
+              </div>
+            </div>
+            <button class="btn btn-glass btn-sm shrink-0" onclick="openModal('Attestation de Stage - Hannachi Agencement', '<div style=\'line-height:1.7; color:#e4e4e7;\'><p><strong>Organisme :</strong> Hannachi Agencement • 187 Rue Albert Camus, 71000 Mâcon</p><p><strong>Stagiaire :</strong> Moundhir Bouachiba</p><p><strong>Site web produit :</strong> <a href=\'https://hannachiagencement.netlify.app/\' target=\'_blank\' style=\'color:#38bdf8; text-decoration:underline;\'>hannachiagencement.netlify.app</a></p><p><strong>Durée :</strong> 5 semaines accomplies à temps plein avec avis très favorable du gérant M. Ameur Hannachi soulignant le sérieux, la rigueur et la qualité du site internet et du formulaire de devis livré.</p></div>')">
+              Consulter
+            </button>
+          </div>
+
+          <!-- Doc 4: Curriculum Vitae -->
+          <div class="glass-panel doc-card">
+            <div class="doc-info">
+              <div class="doc-icon">📄</div>
+              <div>
+                <h4>Curriculum Vitae au Format PDF</h4>
+                <p>CV complet détaillant l'état civil, les coordonnées, les compétences techniques validées, le parcours et les expériences.</p>
+              </div>
+            </div>
+            <a href="assets/cv_moundhir.pdf" target="_blank" class="btn btn-primary btn-sm shrink-0">
+              Télécharger PDF
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Global Modal Popup -->
+  <div class="modal-backdrop">
+    <div class="modal-box">
+      <button class="modal-close-btn" aria-label="Fermer">✕</button>
+      <h3 class="modal-title" style="font-size: 1.35rem; font-weight: 700; color: #ffffff; margin-bottom: 1.25rem;">Détail</h3>
+      <div class="modal-body-dynamic" style="color: var(--text-secondary); line-height: 1.6;"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <h4>Portfolio Moundhir Bouachiba • BTS SIO SLAM</h4>
+        <p>© 2026 Lycée Lamartine (Mâcon) — Épreuve E6 / E4</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="https://github.com/moundhirbouachiba-debug" target="_blank" rel="noopener">GitHub</a>
+        <a href="a-propos.html">À propos / CV</a>
+        <a href="contact.html">Contact</a>
+        <button class="scroll-top-btn" aria-label="Haut de page">
+          <span>↑</span> Haut de page
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
